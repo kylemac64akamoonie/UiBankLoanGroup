@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Wait for page to load",
+  "Type": "Element",
+  "Id": "A1-XfE8Fakebs9YfPAo4vw",
+  "Reference": "wfuWnfM3jk-r9Bpb4SQo8w/A1-XfE8Fakebs9YfPAo4vw",
+  "ParentRef": "wfuWnfM3jk-r9Bpb4SQo8w/MpJP1Ob1-kSTWgq1QnYUeg",
+  "Created": "2025-05-06T09:59:01.0705924Z",
+  "Updated": "2025-05-06T09:59:01.0705924Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

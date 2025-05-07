@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Download transaction histories",
+  "Type": "App",
+  "Id": "5Z_T3h8D_ESi3EwkafUKxg",
+  "Reference": "wfuWnfM3jk-r9Bpb4SQo8w/5Z_T3h8D_ESi3EwkafUKxg",
+  "Created": "2025-05-06T09:55:51.6976951Z",
+  "Updated": "2025-05-06T09:55:51.6976951Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

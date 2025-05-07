@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Download transaction histories",
+  "Type": "Screen",
+  "Id": "MpJP1Ob1-kSTWgq1QnYUeg",
+  "Reference": "wfuWnfM3jk-r9Bpb4SQo8w/MpJP1Ob1-kSTWgq1QnYUeg",
+  "ParentRef": "wfuWnfM3jk-r9Bpb4SQo8w/79n9Xq41JEeAr8pALj_HpA",
+  "Created": "2025-05-06T09:55:51.7384998Z",
+  "Updated": "2025-05-06T09:55:51.7384998Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

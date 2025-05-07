@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8MLkKJWkB0GZQ3G0B-wbHg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts" DesignTimeRectangle="416, 357, 737, 96" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='account-card' tag='DIV' type='' aaname='' /&gt;" Guid="b26554ac-361d-4dd3-a601-c3fa94af4973" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank - Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="58f6f2ae-b7dd-45cf-9a08-8e2e9e11dae5" CvTextArea="428, 257, 257, 43" CvTextArgument="Welcome!" CvType="Text" DesignTimeRectangle="432, 251, 361, 58" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='text-white xxx-large' aaname=' Welcome! ' check:innerText='Welcome!' /&gt;" Guid="43d37837-7c79-4e25-afa7-008ff7736ee1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="545e81ffc8cf00ea2d25d9d7309753b7.png" xmlns="">0Q9DRDLTBAEioA5wMjyX5Ag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
