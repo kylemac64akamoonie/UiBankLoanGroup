@@ -116,7 +116,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Iterate through UI elements, click each element that matches an entry from the input file, download transaction history report for each element." DisplayName="DownloadTransactions" sap:VirtualizedContainerService.HintSize="1279,3187" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Iterate through UI elements, click each element that matches an entry from the input file, download transaction history report for each element." DisplayName="DownloadTransactions" sap:VirtualizedContainerService.HintSize="1279,3185" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_AccountNames" />
     </Sequence.Variables>
@@ -128,18 +128,18 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1264,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Downloading reports...&quot;]" />
     <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_AccountNames]" DisplayName="Read account names from input file" sap:VirtualizedContainerService.HintSize="1264,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\Input\Account Names.xlsx" />
-    <ui:RetryScope DisplayName="Try 3 times" sap:VirtualizedContainerService.HintSize="1264,2676" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
+    <ui:RetryScope DisplayName="Try 3 times" sap:VirtualizedContainerService.HintSize="1264,2674" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
-          <Sequence DisplayName="Attempt to download files" sap:VirtualizedContainerService.HintSize="1222,2469" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Attempt to download files" sap:VirtualizedContainerService.HintSize="1222,2467" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Wait for page to load" sap:VirtualizedContainerService.HintSize="1188,2409" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="10" Version="V4">
+            <uix:NCheckState DisplayName="Wait for page to load" sap:VirtualizedContainerService.HintSize="1188,2407" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="10" Version="V4">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="If target appears" sap:VirtualizedContainerService.HintSize="684,2169" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="If target appears" sap:VirtualizedContainerService.HintSize="684,2167" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -287,13 +287,14 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="If target does not appear" sap:VirtualizedContainerService.HintSize="450,352" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Throw Exception="[New SystemException(&quot;Webpage failed to load&quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  <Throw Exception="[New SystemException(&quot;Webpage failed to load&quot;)]" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                  <ui:LogMessage DisplayName="Failure to download files" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[&quot;Failed to download files&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
